@@ -1,0 +1,65 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+
+.app {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+header { display: flex; flex-direction: column; gap: 0.25rem; }
+h1 { margin: 0; font-size: 1.75rem; letter-spacing: -0.02em; }
+.subtitle { margin: 0; color: #94a3b8; }
+.muted { color: #94a3b8; margin: 0; font-size: 0.9rem; }
+
+.zip-form { display: flex; gap: 0.5rem; }
+.zip-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: inherit;
+  font-size: 1rem;
+}
+.zip-form input:focus { outline: 2px solid #38bdf8; outline-offset: 2px; }
+.zip-form button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+}
+.zip-form button:hover { background: #7dd3fc; }
+
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid #334155;
+}
+.temp { font-size: 3rem; font-weight: 700; line-height: 1; }
+.condition { margin-top: 0.5rem; color: #cbd5e1; text-transform: capitalize; }
+.updated { margin-top: 0.75rem; color: #64748b; font-size: 0.8rem; }
+
+.status {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  font-size: 0.9rem;
+}
