@@ -63,9 +63,14 @@ export default function App() {
       setStatus('Enter a valid 5-digit ZIP')
       return
     }
-    await setDoc(SETTINGS_REF, { zipCode: zip }, { merge: true })
-    setStatus('Saved')
-    await enableNotifications()
+    try {
+      await setDoc(SETTINGS_REF, { zipCode: zip }, { merge: true })
+      setStatus('Saved')
+      await enableNotifications()
+    } catch (err) {
+      console.error('Failed to save ZIP or enable notifications:', err)
+      setStatus('Something went wrong. Please try again.')
+    }
   }
 
   return (

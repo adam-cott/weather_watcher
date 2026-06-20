@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 import { getMessaging, isSupported } from 'firebase/messaging'
 
-export const firebaseConfig = {
+const firebaseConfig = {
   apiKey: 'AIzaSyAdUm0JB840gYxV2BaDpnUwqvMS63Kl_6g',
   authDomain: 'home-weather-watcher.firebaseapp.com',
   projectId: 'home-weather-watcher',
